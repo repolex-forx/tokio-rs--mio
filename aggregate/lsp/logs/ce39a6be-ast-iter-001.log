@@ -1,0 +1,7 @@
+[2026-04-23T00:40:40Z] === AST ITERATION 1 START | repo=tokio-rs/mio sha=ce39a6be ===
+[2026-04-23T00:40:40Z] [iter=1] PHASE START: ast repo=tokio-rs/mio sha=ce39a6be
+[2026-04-23T00:40:40Z] [iter=1] Building AST aggregate chunks
+[2026-04-23T00:41:33Z] [iter=1] AST chunks built count=1 triples=681017
+[2026-04-23T00:41:33Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/ce39a6be2cc739165daaeb10cce609b9b77242ac/.complete
+[2026-04-23T00:41:33Z] [iter=1] PHASE END: ast elapsed_s=52 elapsed_min=0.9
+[2026-04-23T00:41:33Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
