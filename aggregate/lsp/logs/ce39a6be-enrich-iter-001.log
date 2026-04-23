@@ -1,0 +1,21 @@
+[2026-04-23T01:24:34Z] === ENRICH ITERATION 1 START | repo=tokio-rs/mio sha=ce39a6be ===
+[2026-04-23T01:24:34Z] [iter=1] PHASE START: enrich repo=tokio-rs/mio sha=ce39a6be runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ce39a6be-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ce39a6be2cc739165daaeb10cce609b9b77242ac.nq.gz
+[2026-04-23T01:24:38Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-23T01:24:42Z] [iter=1] AST store loaded triples=681017 load_secs=4 mem_mb=775 MB
+[2026-04-23T01:24:42Z] [iter=1] Step 2: Finding LSP targets mem_mb=775 MB
+[2026-04-23T01:24:43Z] [iter=1] LSP targets found call_sites=5981 imports=279 extends=0 implements=9 secs=1
+[2026-04-23T01:24:44Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=775 MB
+[2026-04-23T01:24:47Z] [iter=1] Position index built positions=47297 nodes_with_types=56844 secs=3 mem_mb=775 MB
+[2026-04-23T01:24:47Z] [iter=1] Step 3: Starting LSP resolution mem_mb=775 MB already_completed_types=[] already_completed_files=0
+[2026-04-23T01:24:47Z] [iter=1] Resolving target type target_type=call_site count=5981
+[2026-04-23T01:25:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=12 resolved=26 errors=0 current=src/poll.rs
+[2026-04-23T01:25:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=38 resolved=111 errors=114 current=src/sys/shell/selector.rs
+[2026-04-23T01:26:01Z] [iter=1] Target type resolved target_type=call_site resolved=152 errors=190 secs=74 mem_mb=775 MB
+[2026-04-23T01:26:01Z] [iter=1] Resolving target type target_type=import_statement count=279
+[2026-04-23T01:26:09Z] [iter=1] Target type resolved target_type=import_statement resolved=97 errors=0 secs=8 mem_mb=775 MB
+[2026-04-23T01:26:09Z] [iter=1] Resolving target type target_type=implements_clause count=9
+[2026-04-23T01:26:10Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=src/io_source.rs
+[2026-04-23T01:26:17Z] [iter=1] Target type resolved target_type=implements_clause resolved=4 errors=0 secs=8 mem_mb=775 MB
+[2026-04-23T01:26:26Z] [iter=1] Step 5: Writing final enrichment file triples=16818
+[2026-04-23T01:26:26Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ce39a6be2cc739165daaeb10cce609b9b77242ac.nq.gz size_kb=293
+[2026-04-23T01:26:26Z] [iter=1] PHASE END: enrich elapsed_s=112 elapsed_min=1.9 total_triples=16818
